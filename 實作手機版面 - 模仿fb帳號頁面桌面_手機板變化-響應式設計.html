@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://cdpn.io/pen/debug/mybZGPP?authentication_hash=ZorBaWdQXyOM -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+  
+  
+
+  <title>實作手機版面 - 模仿fb帳號頁面桌面/手機板變化-響應式設計</title>
+
+    <link rel="canonical" href="https://codepen.io/hianfqgj-the-decoder/pen/mybZGPP">
+  
+  
+  <link rel="stylesheet" href="./實作手機版面 - 模仿fb帳號頁面桌面_手機板變化-響應式設計_files/font-awesome.css">
+  
+<style>
+@charset "UTF-8";
+* {
+  vertical-align: middle;
+  position: relative;
+  font-family: 微軟正黑體;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #E9EBEE;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.topbar {
+  background-color: #333;
+  height: 50px;
+}
+.topbar .icon {
+  height: 30px;
+  margin: 10px;
+}
+.topbar input {
+  height: 30px;
+  margin: 10px;
+  margin-left: 0px;
+  width: 300px;
+  border-radius: 5px;
+  padding-left: 5px;
+  border: none;
+}
+
+.cover {
+  height: 330px;
+  background-image: url("https://i.imgur.com/DO73kub.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.midbar {
+  height: 50px;
+  background-color: #fff;
+}
+.midbar .personimg {
+  width: 150px;
+  height: 150px;
+  background-image: url("https://i.imgur.com/bsBz99x.jpeg");
+  background-size: 100% auto;
+  border: solid 3px #fff;
+  position: absolute;
+  top: -130px;
+  left: 20px;
+}
+.midbar .personimg .name {
+  position: absolute;
+  right: -120px;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.midbar .personimg .name h2, .midbar .personimg .name h5 {
+  margin: 0;
+}
+.midbar .personimg .name h2 {
+  font-size: 32px;
+}
+.midbar .personimg .name h5 {
+  font-size: 16px;
+}
+
+.bottombar {
+  background-color: #fff;
+  width: 35%;
+  min-width: 350px;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+.bottombar i {
+  width: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .topbar {
+    height: 60px;
+    color: white;
+  }
+  .topbar .icon {
+    height: 40px;
+    margin: 10px;
+  }
+  .topbar input {
+    height: 30px;
+    width: calc( 100% - 40px - 60px );
+    background-color: #1a1a1a;
+  }
+
+  .midbar {
+    height: 100px;
+  }
+  .midbar .personimg {
+    width: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .midbar .personimg .name {
+    right: initial;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: #555;
+  }
+
+  .bottombar {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .bottombar p {
+    border-top: solid 1px #bbbbbb;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: 12px;
+  }
+}
+</style>
+
+  
+  
+  
+<style>:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}</style></head>
+
+<body>
+  <div class="container">
+  <div class="topbar"><img class="icon" src="./實作手機版面 - 模仿fb帳號頁面桌面_手機板變化-響應式設計_files/SW1hGET.png">
+    <input placeholder="搜尋人、地點、事務">
+  </div>
+  <div class="cover"></div>
+  <div class="midbar">
+    <div class="personimg">
+      <div class="name">
+        <h2 class="chtname">許馨蓉</h2>
+        <h5 class="engname">(Xu,xin-rong)</h5>
+      </div>
+    </div>
+  </div>
+  <div class="bottombar">
+    <p><i class="fa fa-briefcase"></i><span>目前擔任資管大四副班代<br></span><i class="fa fa-graduation-cap"></i><span>之前就職: 資管系29屆系學會-器材長<br></span><i class="fa fa-bank"></i><span>目前就讀嶺東科技大學資訊管理系/資訊科技系<br></span><i class="fa fa-plane"></i><span>現居彰化縣</span></p>
+  </div>
+</div>
+  
+  
+  
+
+
+
+</body></html>
